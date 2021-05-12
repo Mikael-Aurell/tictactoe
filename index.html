@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <script>
+        function display(val,id_){
+            console.log(val)
+            if (val === " " || val === "O") return document.getElementById(id_).value="X";
+            else if ( val === "X") document.getElementById(id_).value="O";
+            else return document.getElementById(id_).value="X";
+        }
+    </script>
+    <style>
+        body{
+            backgroundcolor: gray;
+        }
+    </style>
+</head>
+<body>
+<div>TicTacToe</div>
+<table border="1">
+    <tr>
+        <td><input type="button" value="" id="1" onclick="display(this.value,this.id)"></td>
+
+        <td><input type="button" value="" id="2" onclick="display(this.value,this.id)"></td>
+        <td><input type="button" value="" id="3" onclick="display(this.value,this.id)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="" id="4" onclick="display(this.value,this.id)"></td>
+        <td><input type="button" value="" id="5" onclick="display(this.value,this.id)"></td>
+        <td><input type="button" value="" id="6" onclick="display(this.value,this.id)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="" id="7" onclick="display(this.value,this.id)"></td>
+        <td><input type="button" value="" id="8" onclick="display(this.value,this.id)"></td>
+        <td><input type="button" value="" id="9" onclick="display(this.value,this.id)"></td>
+    </tr>
+</table>
+</body>
+</html>
